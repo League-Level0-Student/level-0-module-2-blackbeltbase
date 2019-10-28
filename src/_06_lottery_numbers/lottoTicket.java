@@ -7,8 +7,16 @@ import javax.swing.JOptionPane;
 public class lottoTicket {
 public static void main(String[] args) {
  Random lottoNumMaker = new Random();
- int lottoNum = lottoNumMaker.nextInt(100);
- JOptionPane.showMessageDialog(null, "Your lotto numbers are: "+lottoNum + " "+lottoNum + " "+lottoNum + " "+lottoNum + " "+lottoNum + " " );
- JOptionPane.showMessageDialog(null, "The winning numbers are: "+lottoNum+" "+lottoNum + " "+lottoNum + " "+lottoNum + " "+lottoNum + " ");
+
+ JOptionPane.showMessageDialog(null, "Your lotto numbers are: ");
+ for(int i = 0; i<= 5; i++) {
+int lottoNum = lottoNumMaker.nextInt(100); 
+JOptionPane.showMessageDialog(null, lottoNum+" ");
+ }
+ JOptionPane.showMessageDialog(null, "The winning numbers are: ");
+ for(int i = 0; i<= 5; i++) {
+int lottoNum = lottoNumMaker.nextInt(100); 
+JOptionPane.showMessageDialog(null, lottoNum+" ");
+ }
 }
 }

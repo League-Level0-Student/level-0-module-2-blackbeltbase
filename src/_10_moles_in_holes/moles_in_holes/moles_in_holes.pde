@@ -26,4 +26,9 @@ void setup() {
      ellipse(70, 119, 100, 30);
      ellipse(300, 60, 100, 30);
      ellipse(297, 350, 100, 30);
+     drawMole(200,200);
+     drawMole(70,119);
+     drawMole(300,60);
+     drawMole(297, 350);
+
 }
